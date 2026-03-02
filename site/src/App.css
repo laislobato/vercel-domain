@@ -1,38 +1,292 @@
-.App {
+/* Reset básico + sensação de jornal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5e9;        /* papel meio amarelado */
+  color: #111;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.48;
+}
+
+.newspaper {
+  max-width: 1100px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px 40px;
+  border: 2px solid black;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  min-height: 1400px;
+}
+
+/* Cabeçalho */
+.masthead {
+  text-align: center;
+  border-bottom: 4px double black;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.newspaper-title {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #444;
+}
+
+.edition {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Banner de texto */
+.banner {
+  margin-top: 12px;
+  padding: 10px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  background: #f8f8e8;
+}
+
+.banner p {
+  margin: 4px 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+
+.banner-small {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  color: #444;
+}
+
+/* Banner imagem */
+.banner-image {
+  margin: 20px 0 30px;
+  border-top: 2px double black;
+  border-bottom: 2px double black;
+  padding: 10px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.full-banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border: 1px solid #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Área de colunas principais */
+.main-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+  margin-bottom: 40px;
+  
+  text-align: justify;
+  text-justify: inter-word
 }
 
-.App-link {
-  color: #61dafb;
+.column {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column.large {
+  flex: 2;          /* ocupa ~2/3 da largura */
+}
+
+.column.small {
+  flex: 1;          /* última coluna com notícias rápidas */
+}
+
+/* Manchete principal */
+.featured-headline {
+  margin-bottom: 25px;
+  border-bottom: 3px double black;
+  padding-bottom: 20px;
+}
+
+.main-headline {
+  font-size: 3rem;
+  line-height: 1.05;
+  margin-bottom: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+.headline-content {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.headline-image {
+  flex: 0 0 40%;
+}
+
+.featured-photo {
+  width: 100%;
+  height: auto;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+  filter: grayscale(90%) contrast(1.15) sepia(0.1);
+}
+
+.headline-text {
+  flex: 1;
+}
+
+.headline-text .byline {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.headline-text .lead {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+/* Manchete pequena (dentro da coluna large) */
+.secondary-news {
+  margin-top: 20px;
+}
+
+/* Notícias rápidas */
+.small-news {
+  margin: 16px 0;
+  padding: 12px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+}
+
+.ad {
+  font-weight: bold;
+  color: darkred;
+  text-align: center;
+  padding: 20px;
+  background: #ffe;
+  border: 2px dashed #c00;
+  margin: 20px 0;
+}
+
+/* Conteúdo abaixo das colunas */
+.below-fold {
+  margin: 40px 0;
+  padding: 20px 0;
+  border-top: 3px double #000;
+}
+
+.below-fold h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #777;
+  padding-bottom: 10px;
+}
+
+/* Elementos comuns */
+.headline {
+  font-size: 2.8rem;
+  line-height: 1.05;
+  margin-bottom: 12px;
+  border-bottom: 2px solid black;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.9rem;
+  margin: 20px 0 10px;
+  border-bottom: 1px solid #777;
+  padding-bottom: 6px;
+}
+
+h4 {
+  font-size: 1.45rem;
+  margin: 18px 0 8px;
+}
+
+h5 {
+  font-size: 1.2rem;
+  margin: 14px 0 6px;
+}
+
+.byline {
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.lead {
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1.2em;
+  font-size: 1.08rem;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px dashed #888;
+  margin: 20px 0;
+}
+
+.divider.thick {
+  border-top: 2px solid #000;
+  margin: 25px 0;
+}
+
+/* Fotos comuns */
+.news-photo {
+  display: block;
+  margin: 15px auto;
+  border: 1px solid #444;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
+  filter: grayscale(90%) contrast(1.15);
+}
+
+.news-photo.medium {
+  width: 100%;
+  height: 200px;
+}
+
+.caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #333;
+  text-align: center;
+  margin: 6px 0 15px;
+  line-height: 1.3;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #aaa;
+  padding-top: 20px;
+  margin-top: 40px;
 }
