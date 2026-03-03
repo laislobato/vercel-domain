@@ -4,13 +4,13 @@ function App() {
   return (
     <div className="newspaper">
       <header className="masthead">
-        <div className="edition">Edição Especial - 20 de Outubro de 1962</div>
-        <h1 className="newspaper-title">JORNAL ALGUMA COISA</h1>
-        <div className="subtitle">Notícias pós crianças com poder nuclear decidirem brincar de Deus :D</div>
+        <div className="edition">EDIÇÃO DE ULTIMA HORA - 20 de Outubro de 1962</div>
+        <h1 className="newspaper-title">JORNAL WW3362</h1>
+        <div className="subtitle">Notícias do mundo e de nossa querida região de Joaninha</div>
 
         <div className="banner">
-          <p>EDIÇÃO ESPECIAL – bla bla bla–bla bla bla–</p>
-          <p className="banner-small">Morte aos soviéticos!!!!!</p>
+          <p>Últimas notícias</p>
+          <p className="banner-small">A PAZ FOI DECLARADA APOS NÓS PAGARMOS O PREÇO</p>
         </div>
       </header>
 
@@ -39,7 +39,7 @@ function App() {
               </div>
 
               <div className="headline-text">
-                <p className="byline">Pelo reporter Rafael - 19/10/1962</p>
+                <p className="byline">Pelo repórter Vitor - 19/10/1962</p>
                 <p className="lead">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -54,7 +54,7 @@ function App() {
           <div className="secondary-news">
             <hr className="divider thick" />
             <h3>Mais uma manchete pequena</h3>
-            <p className="byline">Pelo reporter Vitor - 17/10/1962</p>
+            <p className="byline">Pelo reporter Rafael - 17/10/1962</p>
             <p>
               Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
             </p>
@@ -69,41 +69,80 @@ function App() {
 
         {/* Coluna pequena: notícias rápidas */}
         <div className="column small">
-          <h3>Notícias Rápidas</h3>
+          <h2>Atualizações Locais</h2>
           
           <div className="small-news">
-            <h5>Gato faz coisa fofa</h5>
-            <p>Lorem ipsum dolor sit amet...</p>
+            <h5>Návios hiperlotados.</h5>
+            <p>Por conta das últimas nukes, a demanda de návios e transportes pra sair da zona de risco dispararam! Preço sobe cerca de 500% comparado com antes da guerra..</p>
           </div>
           
           <div className="small-news">
-            <h5>Preço da gasolina explode</h5>
-            <p>Consectetur adipiscing elit...</p>
+            <h5>Hospital local é abandonado</h5>
+            <p>O hospital nostradames, o mais proximo em cerca de 30km é abandonado com toda a sua equipe médica abandonando a região para uma zona segura na América do Sul. Os poucos que ficaram foram para o abrigo do centro.</p>
           </div>
 
           <div className="small-news">
-            <h5>Clima: vai chover ou não?</h5>
+            <h5>Inverno Radioativo, o que é?</h5>
             <p>Sed do eiusmod tempor...</p>
           </div>
 
           <hr className="divider" />
 
-          <h4>Anuncios de Emprego</h4>
-          <p className="ad">padeiro</p>
-          <p className="ad">padeiro</p>
-          <p className="ad">padeiro</p>
-          <p className="ad">padeiro</p>
+          <h4>Anúncios de Emprego</h4>
+          <p className="ad">
+            <b>Entregador</b> <br/>
+            Entregar nossos jornais para região de joaninha! <br/>
+            <hr className="red"/>
+            200 S$/h <br/>
+          </p>
+          <p className="ad">
+            <b>ENFERMEIRO</b> <br/>
+            Procura-se URGENTEMENTE qualquer agente de saúde para ajudar com a hiperlotação no abrigo do centro<br/>
+            <hr className="red"/>
+            O salário será entregue após os suprimentos do norte forem entregues <br/>
+          </p>
+          <p className="ad">
+            Profissão <br/>
+            Descrição <br/>
+            <hr className="red"/>
+            Salário <br/>
+          </p>
         </div>
       </div>
 
       {/* Conteúdo extra abaixo das colunas, full width */}
       <div className="below-fold">
         <hr className="divider thick" />
-        <h3>Continuação / Outras Notícias</h3>
-        <p>
-          Se tiver mais alguma ideia de manchete só adicionar aqui
-        </p>
+        <h2 className="AG">Atualizações Globais</h2>
         {/* Pode adicionar mais seções aqui depois */}
+
+        {/* Coluna grande: manchete principal (ocupa ~2/3) */}
+        <div className="column large">
+          <div className="featured-headline">
+            <h2 className="main-AG">Russia e EUA declaram paz após destruir o mundo.</h2>
+
+            <div className="headline-content">
+              <div className="headline-image">
+                <img 
+                  src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/nuclear-weapons-514866568.jpg?w=1600" 
+                  alt="............." 
+                  className="featured-photo"
+                />
+                <p className="caption">resumo da imagem - data</p>
+              </div>
+
+              <div className="headline-text">
+                <p className="byline">Pelo repórter Tico - 19/10/1962</p>
+                <p className="lead">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer className="footer">
