@@ -1,4 +1,5 @@
 import './App.css';
+import foto from "./img/01.png";
 
 function App() {
   return (
@@ -53,14 +54,18 @@ function App() {
           {/* Manchete pequena logo abaixo, dentro da mesma coluna */}
           <div className="secondary-news">
             <hr className="divider thick" />
-            <h3>Mais uma manchete pequena</h3>
+            <h3>Manchetes fúteis ofuscam debate sobre transporte marítimo</h3>
             <p className="byline">Pelo reporter Rafael - 17/10/1962</p>
             <p>
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+              Nos últimos meses, parte da mídia tem dado destaque ao preço de cruzeiros turísticos e às “promoções” de viagens em navios de lazer. Reportagens detalham valores de cabines e experiências de luxo, mas ignoram discussões mais relevantes sobre o transporte marítimo.<br/>
+
+              Enquanto isso, especialistas apontam problemas estruturais no setor, como a redução de rotas regulares para passageiros e o encarecimento do transporte. Em alguns casos, viajantes acabam recorrendo a navios de carga como alternativa, diante do alto custo e da falta de opções acessíveis.
+
+              Críticos afirmam que a cobertura jornalística revela uma inversão de prioridades: temas superficiais recebem destaque, enquanto questões ligadas ao acesso ao transporte e ao funcionamento do sistema marítimo permanecem à margem do debate público.
             </p>
             <img 
-              src="https://www.gov.br/cnen/pt-br/avulsos/ipen-sala-controle-1976-jpg" 
-              alt=".........." 
+              src={foto}
+              alt=''
               className="news-photo medium"
             />
             <p className="caption">resumo da imagem - data</p>
