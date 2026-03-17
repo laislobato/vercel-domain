@@ -5,8 +5,8 @@ function App() {
   return (
     <div className="newspaper">
       <header className="masthead">
-        <div className="edition">EDIÇÃO DE ULTIMA HORA - 20 de Outubro de 1962</div>
-        <h1 className="newspaper-title">JORNAL WW3362</h1>
+        <div className="edition">EDIÇÃO DE ULTIMA HORA - 2 de Novembro de 1962</div>
+        <h1 className="newspaper-title">JORNAL Joaninha</h1>
         <div className="subtitle">Notícias do mundo e de nossa querida região de Joaninha</div>
 
         <div className="banner">
@@ -27,25 +27,25 @@ function App() {
         {/* Coluna grande: manchete principal (ocupa ~2/3) */}
         <div className="column large">
           <div className="featured-headline">
-            <h2 className="main-headline">NOTICIA ULTRA MEGA IMPORTANTE!</h2>
+            <h2 className="main-headline">Russia e EUA declaram paz após destruir o mundo.</h2>
 
             <div className="headline-content">
               <div className="headline-image">
                 <img 
-                  src="https://www.forte.jor.br/wp-content/uploads/2024/10/60-anos-do-primeiro-teste-nuclear-da-China-4.jpeg" 
+                  src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/nuclear-weapons-514866568.jpg?w=1600" 
                   alt="............." 
                   className="featured-photo"
                 />
-                <p className="caption">resumo da imagem - data</p>
+                <p className="caption">Nesta imagem, tropas da 11ª divisão aerotransportada assistem a uma explosão atômica a curta distância no deserto de Las Vegas, em 1 de novembro de 1951. - Foto de Bettmann, Getty</p>
               </div>
 
               <div className="headline-text">
-                <p className="byline">Pelo repórter Vitor - 19/10/1962</p>
+                <p className="byline">Pelo repórter <b>Vitor Martins</b> - 29/10/1962</p>
                 <p className="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Depois de 6 dias de guerra, os Estados Unidos da Ámerica e a União das Repúblicas Socialistas Soviéticas finalmente assinaram o trato de paz depois de mais de 50% das regiões dos países envolvidos terem se tornado completamente inabitaveis por conta da radiação e das Nukes.
                 </p>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                  Nesse exato momento a maioria das pessoas influêntes da região estão saindo de seus países para os menos atingidos em busca de um local "habitavel", enquanto nós ficamos para trás.
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ function App() {
           <div className="secondary-news">
             <hr className="divider thick" />
             <h3>Manchetes fúteis ofuscam debate sobre transporte marítimo</h3>
-            <p className="byline">Pelo reporter Rafael - 17/10/1962</p>
+            <p className="byline">Pelo repórter e cartunista <b>Rafael Bastos</b> - 31/10/1962</p>
             <p>
               Nos últimos meses, parte da mídia tem dado destaque ao preço de cruzeiros turísticos e às “promoções” de viagens em navios de lazer. Reportagens detalham valores de cabines e experiências de luxo, mas ignoram discussões mais relevantes sobre o transporte marítimo.<br/>
 
@@ -68,7 +68,7 @@ function App() {
               alt=''
               className="news-photo medium"
             />
-            <p className="caption">resumo da imagem - data</p>
+            <p className="caption">A charge mostra dois jornalistas reportando uma criança com um pequeno jogo de cartas enquanto prédio atrás estão pegando fogo - Charge por <b>Rafael Bastos</b></p>
           </div>
         </div>
 
@@ -88,7 +88,7 @@ function App() {
 
           <div className="small-news">
             <h5>Inverno Radioativo, o que é?</h5>
-            <p>Sed do eiusmod tempor...</p>
+            <p>É o resultado de uma guerra nuclear em larga escala. As enormes quantidades de fumaça e poeira lançadas na atmosfera após múltiplas detonações nucleares criam um efeito "antiestufa", resfriando a Terra a temperaturas abaixo de zero e levando a uma escuridão prolongada.</p>
           </div>
 
           <hr className="divider" />
@@ -107,10 +107,10 @@ function App() {
             O salário será entregue após os suprimentos do norte forem entregues <br/>
           </p>
           <p className="ad">
-            Profissão <br/>
-            Descrição <br/>
+            <b>Capitão, Piloteiro ou qualquer pessoa que saiab pilotar um Barco</b> <br/>
+            Pilotar um barco de porte médio para Africa com cerca de 190 passageiros <br/>
             <hr className="red"/>
-            Salário <br/>
+            O salário será negociado com os passsageiros dependendo da quantidade que cada um tem <br/>
           </p>
         </div>
       </div>
@@ -118,11 +118,10 @@ function App() {
       {/* Conteúdo extra abaixo das colunas, full width */}
       <div className="below-fold">
         <hr className="divider thick" />
-        <h2 className="AG">Atualizações Globais</h2>
-        {/* Pode adicionar mais seções aqui depois */}
+        {/* <h2 className="AG">Atualizações Globais</h2> */}
 
         {/* Coluna grande: manchete principal (ocupa ~2/3) */}
-        <div className="column large">
+        {/* <div className="column large">
           <div className="featured-headline">
             <h2 className="main-AG">Russia e EUA declaram paz após destruir o mundo.</h2>
 
@@ -133,21 +132,21 @@ function App() {
                   alt="............." 
                   className="featured-photo"
                 />
-                <p className="caption">resumo da imagem - data</p>
+                <p className="caption">resumo da imagem </p>
               </div>
 
               <div className="headline-text">
-                <p className="byline">Pelo repórter Tico - 19/10/1962</p>
+                <p className="byline">Pelo repórter Tico - 02/11/1962</p>
                 <p className="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  lorem ipson
                 </p>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                  aaaaaaaaaaaaaaaaaa 
                 </p>
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <footer className="footer">
