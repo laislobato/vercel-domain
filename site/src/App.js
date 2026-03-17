@@ -1,5 +1,6 @@
 import './App.css';
 import foto from "./img/01.png";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
   return (
@@ -153,6 +154,7 @@ function App() {
       <footer className="footer">
         <p>Proibida a reprodução sem permissão.</p>
       </footer>
+      <SpeedInsights />
     </div>
   );
 }
