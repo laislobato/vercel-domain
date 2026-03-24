@@ -32,7 +32,7 @@ function Pag() {
         <div className="column large">
           <div className="featured-headline">
             <h2 className="main-headline" style={{ textAlign: 'center' }}>
-              Site Criado por Trevo Team
+              Criadores do Site
             </h2>
 
             <div className="headline-content">
