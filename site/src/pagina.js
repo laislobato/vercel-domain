@@ -45,7 +45,7 @@ function Pag() {
               </div>
 
               <div className="headline-text">
-                <p className="byline" style={{ fontSize: '1.3rem', textAlign: 'center' }}>Site criado por Vitor, Laís e Rafael.
+                <p className="byline" style={{ fontSize: '1.3rem', textAlign: 'center' }}> por Vitor M., Lais L. e Rafael B..
                 </p>
                 
                 <p className="lead" style={{ fontSize: '1.3rem' }}>
