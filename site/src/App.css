@@ -13,6 +13,11 @@ body {
   line-height: 1.48;
 }
 
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+}
+
 .newspaper {
   background-image: url(https://i.pinimg.com/736x/82/55/af/8255af03f45a0d7da956dfc38194275a.jpg);
   background-size: contain;
